@@ -8,5 +8,17 @@ def initialize(team_name, players, coach)
   @coach = coach
 end
 
+def add_player(new_player)
+    @players.push(new_player)
+end
+
+def find_player(player_name)
+    for player in @players
+        if player == player_name
+          return player_name
+        end
+    end
+end
+
 
 end

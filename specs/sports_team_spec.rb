@@ -25,7 +25,16 @@ def test_set_coach_name
     assert_equal("Jack", team.coach())
 end
 
+def test_add_player
+    team = SportsTeam.new("cav fc", ["Cameron", "Calum", "Sam"], "Joe" )
+    team.add_player("David")
+    assert_equal(["Cameron", "Calum", "Sam", "David"], team.players())
+end
 
+def test_find_player
+    team = SportsTeam.new("cav fc", ["Cameron", "Calum", "Sam"], "Joe")
+    assert_equal("Cameron", team.find_player("Cameron"))
+end
 
 
 

@@ -29,7 +29,6 @@ end
 
 def test_student_talks
   student = Student.new("Cameron", "E34")
-  student.student_talks()
   assert_equal("I can talk", student.student_talks())
 end
 
